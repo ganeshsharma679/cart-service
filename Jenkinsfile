@@ -1,10 +1,6 @@
 def templateName = 'cart' 
 pipeline {
-    agent {
-    node {
-      label 'maven' 
-    }
-  }
+    agent any
   stages {
   stage('Build') {
      steps {
