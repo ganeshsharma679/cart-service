@@ -42,8 +42,10 @@ pipeline {
       }
   }
   stage('System Test') {
+     steps {
     sh "curl -s -X POST http://cart:8080/api/cart/dummy/666/1"
     sh "curl -s http://cart:8080/api/cart/dummy | grep 'Dummy Product'"
+     }
   }
 }
 }
