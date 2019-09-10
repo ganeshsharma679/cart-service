@@ -16,8 +16,8 @@ pipeline {
       "Discount Tests": {
         sh "mvn verify -P discount-tests"
       }
-      }
     )
+     }
   }
   stage('Build Image') {
      steps {
