@@ -34,7 +34,6 @@ pipeline {
                 openshift.withProject() {
                   def rm = openshift.selector("dc", templateName).rollout().latest()
                   }
-                }
             }
         }
       }
