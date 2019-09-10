@@ -1,3 +1,4 @@
+def templateName = 'cart' 
 pipeline {
     agent {
     node {
